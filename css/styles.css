@@ -56,14 +56,18 @@ body {
 
 /* ========== command ========= */
 
-.current::after {
-  content:'';
+.navigation-link {
+  position: relative;
+}
+
+.navigation-link .current::after {
   position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 100%;
+  content:'';
+  display: block;
+  bottom: 0;
+  width: 48px;
   height: 4px;
-  background-color: var(--color-focus);
+  background: #2196f3;
   border-radius: 2px;
 }
 
